@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ayudemos a la Familia Rodríguez">
+  <meta name="keywords" content="ayuda, familia, donación, solidaridad">
+  <meta name="author" content="Cristian Bordon">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yandexbot" content="index, follow">
+  <title>Ayudemos a la Familia Rodríguez</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1><i class="fas fa-heart"></i> Ayudemos a la Familia Álvaro </h1>
+      <p class="hero-text">Desde el dolor, queremos ayudar. Su hijo se quitó la vida en Argentina, y su familia colombiana necesita ayuda urgente.</p>
+    </div>
+  </header>
+
+  <section class="image-section">
+    <div class="image-container">
+      <img src="imagen-del-chico.jpg" alt="Foto del joven" />
+    </div>
+  
+    <div class="text-container">
+      <h2><i class="fas fa-heart"></i> Nuestra misión</h2>
+      <p>
+         Los alumnos de la Facultad de Filosofía Humanidades y Artes / Carrera de estudios teatrales de la provincia de San Juan, Iniciamos  esta iniciativa para ayudar a la familia de Álvaro .  
+         Àlvaro Andres Palomino es el nombre de nuestro compañero quien  fallecio el Lunes 5 de Mayo. Su familia es de Colombia, y no cuentan con los fondos suficientes para cubrir gastos de viaje, funeraria y demas. Calculamos asi un aproximado de $2.000.000. 
+         Nuestra misión es ayudar a esta familia a cubrir sus gastos, como forma de reconocimiento a nuestro compañero  y acompñamiento a su familia en su dolor. 
+        </p> 
+
+
+</section>
+
+  <section class="donation-info">
+    <div class="progress-container">
+      <h2><i class="fas fa-hand-holding-heart"></i> Meta: $2.000.000</h2>
+      <div class="progress-bar">
+        <div class="progress" style="width: 5%"></div>
+      </div>
+      <p class="amount-raised">Recaudado: $100.000</p>
+      <p class="support-text">Cada aporte suma. ¡Gracias por tu solidaridad!</p>
+    </div>
+  </section>
+
+  <section class="donation-buttons">
+    <h3><i class="fas fa-donate"></i> Donar ahora</h3>
+    <div class="button-container">
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace1000')">
+        <i class="fas fa-dollar-sign"></i> Donar $1.000
+      </button>
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace3000')">
+        <i class="fas fa-dollar-sign"></i> Donar $3.000
+      </button>
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace5000')">
+        <i class="fas fa-dollar-sign"></i> Donar $5.000
+      </button>
+      <button class="donation-btn custom" onclick="window.open('https://mpago.la/enlace-otro')">
+        <i class="fas fa-heart"></i> Donar otro monto
+      </button>
+    </div>
+    <div class="mercadopago-logo">
+      <img src="assents/mercagopago.png" alt="Mercado Pago" />
+    </div>
+  </section>
+
+  <footer>
+    <p><i class="fas fa-info-circle"></i> Gracias por tu ayuda. Todo lo recaudado irá directamente a la familia.</p>
+    <div class="social-share">
+      <button class="share-btn" onclick="compartirEnFacebook()">
+        <i class="fab fa-facebook"></i> Compartir
+      </button>
+      <button class="share-btn" onclick="compartirEnTwitter()">
+        <i class="fab fa-twitter"></i> Compartir
+      </button>
+      <button class="share-btn" onclick="compartirEnWhatsApp()">
+        <i class="fab fa-whatsapp"></i> Compartir
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
