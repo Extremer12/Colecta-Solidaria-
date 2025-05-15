@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ayudemos a la Familia Rodríguez">
+  <meta name="keywords" content="ayuda, familia, donación, solidaridad">
+  <meta name="author" content="Cristian Bordon">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yandexbot" content="index, follow">
+  <title>Ayudemos a la Familia Rodríguez</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="particles-container" id="particles-js"></div>
+  
+  <header class="hero">
+    <div class="hero-content animate__animated animate__fadeIn">
+      <div class="hero-icon"><i class="fas fa-heart pulse"></i></div>
+      <h1 class="animate__animated animate__fadeInDown">Ayudemos a la Familia Álvaro</h1>
+      <p class="hero-text animate__animated animate__fadeIn animate__delay-1s">Desde el dolor, queremos ayudar. Su hijo se quitó la vida en Argentina, y su familia colombiana necesita ayuda urgente.</p>
+      <div class="cta-button animate__animated animate__bounceIn animate__delay-2s">
+        <a href="#donar" class="primary-btn"><i class="fas fa-hand-holding-heart"></i> Donar Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="image-section">
+    <div class="image-container animate__animated animate__fadeInLeft">
+      <div class="image-frame">
+        <img src="imagen-del-chico.jpg" alt="Foto del joven" />
+      </div>
+    </div>
+  
+    <div class="text-container animate__animated animate__fadeInRight">
+      <h2><i class="fas fa-heart beat"></i> Nuestra misión</h2>
+      <p>
+        Los alumnos de la Facultad de Filosofía Humanidades y Artes / Carrera de estudios teatrales de la provincia de San Juan, Iniciamos esta iniciativa para ayudar a la familia de Álvaro.
+      </p>
+      <p>
+        Álvaro Andres Palomino es el nombre de nuestro compañero quien falleció el Lunes 5 de Mayo. Su familia es de Colombia, quien si vive en Argentina es su mamá. La familia para poder llevar a cabo la cremación necesita   $2.000.000. Además su madre trabaja en un almacen que no podrá atender por algunos días asi que tambien necesitara ayuda para su día a día.
+      </p>
+      <p>
+        Nuestra misión es ayudar a esta familia a cubrir sus gastos, como forma de reconocimiento a nuestro compañero y acompañamiento a su familia en su dolor.
+      </p>
+    </div>
+  </section>
+
+  <div class="wave-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+
+  <section id="donar" class="donation-info animate__animated animate__fadeInUp">
+    <div class="progress-container">
+      <h2><i class="fas fa-hand-holding-heart"></i> Meta: $2.000.000</h2>
+      <div class="progress-bar">
+        <div class="progress" style="width: 5%"><span class="progress-text">5%</span></div>
+      </div>
+      <p class="amount-raised">Recaudado: $100.000</p>
+      <p class="support-text">Cada aporte suma. ¡Gracias por tu solidaridad!</p>
+    </div>
+  </section>
+
+  <section class="donation-buttons animate__animated animate__fadeInUp animate__delay-1s">
+    <h3><i class="fas fa-donate pulse"></i> Donar ahora</h3>
+    <div class="button-container">
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace1000')">
+        <i class="fas fa-dollar-sign"></i> Donar $1.000 (total con comisión: $1.100)
+      </button>
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace3000')">
+        <i class="fas fa-dollar-sign"></i> Donar $3.000 (total con comisión: $3.250)
+      </button>
+      <button class="donation-btn" onclick="window.open('https://mpago.la/enlace5000')">
+        <i class="fas fa-dollar-sign"></i> Donar $5.000 (total con comisión: $5.400)
+      </button>
+      <button class="donation-btn custom" onclick="window.open('https://mpago.la/enlace-otro')">
+        <i class="fas fa-heart"></i> Donar otro monto
+      </button>
+    </div>
+    <p class="fee-notice"><i class="fas fa-info-circle"></i> Mercado Pago aplica una comisión aproximada del 6% + $33,90 + IVA por cada transacción.</p>
+    <div class="fee-calculator">
+      <p>Calcula el monto final con comisiones:</p>
+      <input type="number" id="donation-amount" placeholder="Ingresa monto a donar" min="100">
+      <p id="final-amount">Monto final con comisiones: $0</p>
+    </div>    
+    
+    <div class="bank-transfer-info">
+      <h4><i class="fas fa-university"></i> Transferencia Bancaria (sin comisiones)</h4>
+      <p>También puedes realizar una transferencia directa a la siguiente cuenta:</p>
+      <ul>
+        <li><strong>Banco:</strong> [Nombre del Banco]</li>
+        <li><strong>Titular:</strong> [Nombre del Titular]</li>
+        <li><strong>CBU/Alias:</strong> [CBU/Alias]</li>
+        <li><strong>CUIT/CUIL:</strong> [CUIT/CUIL]</li>
+      </ul>
+      <p>Si realizas una transferencia, por favor envía el comprobante a [email/WhatsApp] para registrar tu donación.</p>
+    </div>
+    
+    <div class="mercadopago-logo">
+      <img src="assents/mercadopagologo.png" alt="Mercado Pago" />
+    </div>
+  </section>
+
+  <div class="wave-divider wave-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f1f1f1" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,165.3C672,149,768,139,864,154.7C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p><i class="fas fa-info-circle"></i> Gracias por tu ayuda. Todo lo recaudado irá directamente a la familia.</p>
+      <p><i class="fas fa-share-alt"></i> También puedes ayudar difundiendo esta página en tus redes sociales. Compartir también es una forma valiosa de colaborar.</p>
+      <div class="social-share">
+        <button class="share-btn facebook" onclick="compartirEnFacebook()">
+          <i class="fab fa-facebook"></i> Compartir
+        </button>
+        <button class="share-btn twitter" onclick="compartirEnTwitter()">
+          <i class="fab fa-twitter"></i> Compartir
+        </button>
+        <button class="share-btn whatsapp" onclick="compartirEnWhatsApp()">
+          <i class="fab fa-whatsapp"></i> Compartir
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
